@@ -6,11 +6,28 @@ body{
     background-color: gray;
     border: solid 2px black;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 150px 1fr;
     grid-template-rows: 100px 400px 100px;
+    grid-template-areas: "header header"
+                         "sidebar conteudo-principal"
+                         "footer footer"
+    ;
 
 }
 .grid-item{
 background-color: rgb(68,68,193);   
 border: solid 2px rgb(66, 183, 86);
+}
+
+.header{
+    grid-area: header;
+}
+.sidebar{
+    grid-area: sidebar;
+}
+.conteudo-principal{
+    grid-area: conteudo-principal;
+}
+.footer{
+    grid-area: footer;
 }
