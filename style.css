@@ -6,8 +6,8 @@ body{
     background-color: gray;
     border: solid 2px black;
     display: grid;
-    grid-template-columns: 150px 1fr;
-    grid-template-rows: 100px 400px 100px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
     grid-template-areas: "header header"
                          "sidebar conteudo-principal"
                          "footer footer"
@@ -25,6 +25,7 @@ border: solid 2px rgb(66, 183, 86);
 }
 .sidebar{
     grid-area: sidebar;
+    padding: 0 40px;
 }
 .conteudo-principal{
     grid-area: conteudo-principal;
